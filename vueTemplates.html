@@ -1,0 +1,68 @@
+<!--This is where templates are designed. Use the browser to view then copy it as a Vue template-->
+<html>
+    <head>
+        <style>
+            #comment-section
+            {
+                position: relative;
+                background-color: rgb(184, 182, 182);
+                width: 80%;
+                height: fit-content;
+                left:10%;
+                padding: 5px;
+                border: 2px black solid;
+                border-radius: 10px;
+            }
+            #username
+            {
+                position: relative;
+                bottom: 11px;
+                
+            }
+            #date
+            {
+                position: relative;
+                left:80%;
+                bottom: 90%;
+            }
+            .darkgrey-font
+            {
+                color:  rgb(61, 61, 61);
+            }
+            .profilepic
+            {
+                margin: 5px;
+                height: 30px;
+                width: 30px;
+                border-radius: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+            The reason I got stuck is because I realised that the user and the post will have comment databases
+            In order for this to work I need to find out how to handle user input data and how to retrieve it.
+            I also want a timestamp on the comment.
+            FUTURE OBJECTIVE: comments should be separated by post
+
+        -->
+        <div id="comment-section">
+            <img class="profilepic" src="./Infinity Sim.jpg"/><span id="username" class="darkgrey-font" >Wenzile</span>
+            <p id="comment">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Corrupti voluptates sequi nemo quo earum quas debitis.
+                 Necessitatibus at recusandae accusantium?
+
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Corrupti voluptates sequi nemo quo earum quas debitis.
+                 Necessitatibus at recusandae accusantium?
+
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Corrupti voluptates sequi nemo quo earum quas debitis.
+                 Necessitatibus at recusandae accusantium?
+            </p>
+            <span id="date" class="darkgrey-font">Date and time</span>
+
+        </div>
+    </body>
+</html>
